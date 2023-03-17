@@ -54,7 +54,6 @@ theme_set(theme_bw())  # pre-set the bw theme.
 data("midwest", package = "ggplot2")
 
 
-#IDK why did not allow
 gg <- ggplot(test, aes(x=GDPGrowth, y=Population)) +
   geom_smooth(method="loess", se=F) + 
   xlim(c(0, 0.1)) + 
